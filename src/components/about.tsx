@@ -13,7 +13,7 @@ function About(){
                 {/* Left */}
                 <div>
                 <Image 
-        src={"/images/sunny copy.png"} 
+        src={"/images/sunny-copy.png"} 
         alt="Profile" 
         width={300}
         height={300}

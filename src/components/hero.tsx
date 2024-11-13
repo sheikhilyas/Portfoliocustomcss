@@ -8,7 +8,7 @@ function Hero() {
         {/* Left */}
         <div>
           <Image
-            src={"/images/sunny copy.png"}
+            src={"/images/sunny-copy.png"}
             alt="Profile picture of Sheikh Ilyas, front-end developer"
             width={300}
             height={300}
