@@ -13,12 +13,12 @@ function About(){
                 {/* Left */}
                 <div>
                 <Image 
-        src={"/images/sunny-copy.png"} 
-        alt="Profile" 
-        width={300}
-        height={300}
-        className="header-image"
-        />
+    src="/images/sunny-copy.png" 
+    alt="Profile" 
+    width={300}
+    height={300}
+    className="header-image"
+/>
         <div className="social-icon">
         <Link href={"https://www.linkedin.com/in/sheikh-ilyas-ab8951329/"}><FaLinkedin className="s-icon1"/></Link>
         <Link href={""}><FaSquareXTwitter className="s-icon2"/></Link>
