@@ -8,12 +8,12 @@ function Hero(){
                 {/* Left */}
                 <div>
                 <Image 
-        src={"/images/ilyas.jpg"} 
-        alt="Profile" 
-        width={200}
-        height={200}
-        className="header-image"
-        />
+                src={"/images/ilyas.jpg"} 
+                alt="Profile picture of Sheikh Ilyas, front-end developer" 
+                width={200}
+                height={200}
+                className="header-image"
+                />
                 </div>
                 {/* Right */}
                 <div className="hero-right-div">
