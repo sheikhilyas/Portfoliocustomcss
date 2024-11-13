@@ -21,7 +21,7 @@ function Education() {
         <div className="computer">
           <h2>Bachelor In Computer Science</h2>
           <p>
-            A Bachelor's in Computer Science provides foundational knowledge in
+            A Bachelor&apos;s in Computer Science provides foundational knowledge in
             programming, algorithms, and computer systems, preparing students for
             careers in software development, data science, and IT. It combines theory
             with practical skills in problem-solving, coding, and technology management.
