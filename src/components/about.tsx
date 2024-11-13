@@ -13,10 +13,10 @@ function About(){
                 {/* Left */}
                 <div>
                 <Image 
-        src={"/images/ilyas.jpg"} 
+        src={"/images/sunny copy.png"} 
         alt="Profile" 
-        width={200}
-        height={200}
+        width={300}
+        height={300}
         className="header-image"
         />
         <div className="social-icon">
