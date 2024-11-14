@@ -19,14 +19,14 @@ function Hero() {
         {/* Right */}
         <div className="hero-right-div">
           <h1 className="title-hero">
-            I&apos;m Sheikh Ilyas <br /> Front-end Developer
+            I'm Sheikh Ilyas <br /> Front-end Developer
           </h1>
           <p className="des-header">
-            I&apos;m Sheikh Ilyas, a front-end developer passionate about building
+            I'm Sheikh Ilyas, a front-end developer passionate about building
             beautiful, responsive websites. With expertise in Next.js, HTML, CSS,
             JavaScript, and frameworks like React, I focus on delivering seamless user
             experiences. I create websites that are not only visually appealing but
-            also highly functional. Let&apos;s work together to turn your ideas into
+            also highly functional. Lets work together to turn your ideas into
             interactive web solutions. Feel free to explore my work and get in touch!
           </p>
           <button className="hero-button">HIRE ME</button>
