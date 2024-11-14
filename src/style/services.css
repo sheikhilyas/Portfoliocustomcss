@@ -92,6 +92,7 @@
     .box {
         width: 200px; 
         height: 180px;
+        justify-items: center;
     }
     .services-icon {
         font-size: 100px; 
