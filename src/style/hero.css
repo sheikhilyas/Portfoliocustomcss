@@ -1,11 +1,46 @@
-.header-container{
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px); 
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.header-container {
     width: 100%;
     height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: fadeIn 1s ease-out; 
 }
-.header-boxes-con{
+
+.header-boxes-con {
     width: 100%;
     height: 100%;
     background-color: white;
@@ -14,54 +49,72 @@
     align-items: center;
     box-shadow: 1px 4px 10px rgb(117, 117, 117);
 }
-.hero-right-div{
-    width: 60%;
-}
-.header-image{
+
+.header-image {
     border-radius: 10px;
     width: 250px;
     height: 250px;
+    animation: slideInLeft 1s ease-out; 
 }
-.title-hero{
+
+.hero-right-div {
+    width: 60%;
+    animation: slideInRight 1s ease-out; 
+}
+
+.title-hero {
     font-size: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 40px;
+    opacity: 0; 
+    animation: fadeIn 1s ease-out forwards; 
 }
-.des-header{
+
+.des-header {
     margin-top: 10px;
+    opacity: 0; 
+    animation: fadeIn 1s ease-out 0.3s forwards; 
 }
-.hero-button{
+
+.hero-button {
     border: none;
     border-radius: 5px;
     margin-top: 30px;
-    padding: 10px 20px 10px 20px ;
+    padding: 10px 20px;
     background-color: rgb(74, 119, 135);
     font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-@media screen and (min-width:100px) and (max-width: 750px){
-    .header-boxes-con{
-        width: 100%;   
+.hero-button:hover {
+    background-color: rgb(50, 90, 105); 
+    transform: scale(1.05); 
+}
+@media screen and (max-width: 750px) {
+    .header-boxes-con {
+        width: 100%;
         flex-direction: column;
+        animation: fadeIn 0.8s ease-out; 
     }
-    .header-image{
+    .header-image {
         width: 100px;
         height: 100px;
+        animation: slideInLeft 0.8s ease-out; 
     }
-    .hero-right-div{
+    .hero-right-div {
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        animation: slideInRight 0.8s ease-out; 
     }
-    .title-hero{
+    .title-hero {
         font-size: 20px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         line-height: 28px;
     }
-    .des-header{
+    .des-header {
         margin-top: 10px;
     }
-    
 }

@@ -1,34 +1,60 @@
-.main{
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); 
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px); 
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.main {
     width: 100%;
     height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 100px;
+    animation: fadeIn 1s ease-out; 
 }
-.services-container{
+.services-container {
     width: 80%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
+    animation: fadeIn 1.2s ease-out;
 }
-.top-div-services{
+.top-div-services {
     width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    animation: fadeIn 1s ease-out 0.3s forwards; 
 }
-.boxces-con{
+.boxces-con {
     width: 100%;
     margin: 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    animation: fadeIn 1.2s ease-out 0.5s forwards; 
 }
-.box{
+.box {
     width: 250px;
     height: 200px;
     background-color: rgb(74, 119, 135);
@@ -38,26 +64,36 @@
     justify-content: start;
     flex-direction: column;
     align-items: center;
+    opacity: 0; 
+    animation: slideUp 0.8s ease-out forwards; 
+    animation-delay: 0.5s; 
 }
-.title-services{
+.title-services {
     font-size: 30px;
+    color: black; 
 }
-.dec-services{
+.dec-services {
     margin-top: 20px;
+    color: black; 
 }
-.services-icon{
+.services-icon {
     font-size: 120px;
+    color: white; 
 }
-@media screen and (min-width:100px) and (max-width:750px) {
-    .main{
+@media screen and (max-width: 750px) {
+    .main {
         width: 100%;
-        height: 100px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 100px;
+        height: auto;
+        margin-top: 50px; 
     }
-    .top-div-services{
+    .top-div-services {
         width: 80%;
+    }
+    .box {
+        width: 200px; 
+        height: 180px;
+    }
+    .services-icon {
+        font-size: 100px; 
     }
 }

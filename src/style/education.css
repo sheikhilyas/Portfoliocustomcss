@@ -1,4 +1,28 @@
-.edu-main{
+ /* Keyframe animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Fade-in with slight upward movement */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Slide-up animation from bottom */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Main container fade-in animation */
+.edu-main {
     width: 100%;
     height: 100%;
     justify-content: center;
@@ -7,39 +31,55 @@
     align-items: center;
     margin-top: 50px;
     margin-bottom: 50px;
-
+    animation: fadeIn 1.2s ease-out; /* Apply fade-in animation */
 }
-.edu-text{
+
+/* Text section fade-in animation */
+.edu-text {
     width: 50%;
     justify-content: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 30px;
+    animation: fadeIn 1s ease-out; /* Apply fade-in animation */
 }
-.box-con-edu{
+
+/* Box container slide-up animation */
+.box-con-edu {
     width: 80%;
     background-color: white;
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    opacity: 0; /* Initially hidden */
+    animation: slideUp 1s ease-out forwards; /* Apply slide-up animation */
+    animation-delay: 0.3s; /* Delay the animation slightly */
 }
-.uni-name{
-    font-size: 25px;
 
+/* University name style */
+.uni-name {
+    font-size: 25px;
+    color: black; /* Text color remains black */
 }
-.computer{
+
+/* Computer section styles */
+.computer {
     width: 50%;
 }
-@media screen and (min-width:0px) and (max-width:750px){
-    .box-con-edu{
-        flex-direction: column;
+
+/* Responsive design for smaller screens */
+@media screen and (min-width:0px) and (max-width:750px) {
+    .box-con-edu {
+        flex-direction: column; /* Stack items vertically on small screens */
     }
-    .computer{
-        width: 100%;
+    .computer {
+        width: 100%; /* Full width for mobile view */
     }
-    .edu-text{
-        width: 90%;
+    .edu-text {
+        width: 90%; /* Slightly wider text container on mobile */
     }
-    
+    .edu-main {
+        margin-top: 30px; /* Adjust margin on mobile */
+    }
 }

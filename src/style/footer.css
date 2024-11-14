@@ -1,4 +1,4 @@
-.footer{
+.footer {
     font-size: 8px;
     width: 100%;
     height: 70px;
@@ -6,4 +6,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed; /* Footer ko screen ke bottom pe fix karne ke liye */
+    bottom: 0;
+    left: 0;
+    z-index: 1000; /* ensure karne ke liye ke footer upar rahe */
+}
+.content {
+    padding-bottom: 70px; /* Footer ki height ke equal padding */
+}
+
+@media (max-width: 750px) {
+    .footer {
+        height: 50px; /* Aap isay adjust kar sakte hain */
+        font-size: 10px;
+    }
 }
