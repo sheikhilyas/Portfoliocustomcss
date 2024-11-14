@@ -15,12 +15,12 @@
     from {
         opacity: 0;
         transform: translateY(20px); 
-        transform: scale(0.9); /* Scale down slightly */
+        transform: scale(0.9); 
     }
     to {
         opacity: 1;
         transform: translateY(0);
-        transform: scale(1); /* Scale back to normal */
+        transform: scale(1); 
     }
 }
 

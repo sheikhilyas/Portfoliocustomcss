@@ -7,13 +7,13 @@ function Hero() {
       <div className="header-boxes-con">
         {/* Left */}
         <div>
-        <Image 
-    src="/images/sunny-copy.png" 
-    alt="Profile" 
-    width={300}
-    height={300}
-    className="header-image"
-/>
+          <Image 
+            src="/images/sunny-copy.png" 
+            alt="Profile" 
+            width={300}
+            height={300}
+            className="header-image"
+          />
         </div>
 
         {/* Right */}
