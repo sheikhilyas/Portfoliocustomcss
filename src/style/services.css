@@ -1,3 +1,4 @@
+/* Animation for fade-in effect */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -9,17 +10,21 @@
     }
 }
 
+/* Animation for slide-up effect */
 @keyframes slideUp {
     from {
         opacity: 0;
         transform: translateY(20px); 
+        transform: scale(0.9); /* Scale down slightly */
     }
     to {
         opacity: 1;
         transform: translateY(0);
+        transform: scale(1); /* Scale back to normal */
     }
 }
 
+/* Main container */
 .main {
     width: 100%;
     height: 600px;
@@ -29,6 +34,8 @@
     margin-top: 100px;
     animation: fadeIn 1s ease-out; 
 }
+
+/* Services container */
 .services-container {
     width: 80%;
     height: 100%;
@@ -38,6 +45,8 @@
     align-items: center;
     animation: fadeIn 1.2s ease-out;
 }
+
+/* Top section of services */
 .top-div-services {
     width: 50%;
     display: flex;
@@ -45,6 +54,8 @@
     align-items: center;
     animation: fadeIn 1s ease-out 0.3s forwards; 
 }
+
+/* Box container for responsive wrapping */
 .boxces-con {
     width: 100%;
     margin: 30px;
@@ -54,6 +65,8 @@
     align-items: center;
     animation: fadeIn 1.2s ease-out 0.5s forwards; 
 }
+
+/* Individual box style with centered content */
 .box {
     width: 250px;
     height: 200px;
@@ -61,25 +74,33 @@
     border: 2px solid gray;
     margin: 8px;
     display: flex;
-    justify-content: start;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
     flex-direction: column;
-    align-items: center;
     opacity: 0; 
     animation: slideUp 0.8s ease-out forwards; 
     animation-delay: 0.5s; 
 }
+
+/* Title styling */
 .title-services {
     font-size: 30px;
     color: black; 
 }
+
+/* Description styling */
 .dec-services {
     margin-top: 20px;
     color: black; 
 }
+
+/* Icon styling */
 .services-icon {
     font-size: 120px;
     color: white; 
 }
+
+/* Responsive styles for smaller screens */
 @media screen and (max-width: 750px) {
     .main {
         width: 100%;
@@ -92,7 +113,6 @@
     .box {
         width: 200px; 
         height: 180px;
-        
     }
     .services-icon {
         font-size: 100px; 
