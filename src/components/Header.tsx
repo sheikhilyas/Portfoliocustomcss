@@ -5,7 +5,7 @@ function Header() {
         <div className="header">
             {/* Left */}
             <div>
-                <h1 className="logo">*Portfolio*</h1>
+                <h1 className="logo">Portfolio</h1>
             </div>
                 {/* Right */}
                 
