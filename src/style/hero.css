@@ -118,3 +118,11 @@
         margin-top: 10px;
     }
 }
+@media screen and (max-width: 750px) {
+    .header-boxes-con {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;    
+        animation: fadeIn 0.8s ease-out; 
+    }
