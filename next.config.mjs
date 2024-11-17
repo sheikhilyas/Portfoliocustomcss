@@ -4,7 +4,6 @@ const nextConfig = {
       unoptimized: true,
     },
   };
-  
-  export default nextConfig;
+export default nextConfig;
   
 
