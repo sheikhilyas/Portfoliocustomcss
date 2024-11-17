@@ -1,6 +1,5 @@
-'use client'
 import "../style/hero.css";
-import Image from "next/image";
+import Image from 'next/image';
 
 function Hero() {
   return (
