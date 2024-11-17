@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['example.com'], // External domains allowed for images
+    domains: ['portfoliocustomcss-three.vercel.app'], // External domains allowed for images
   },
 };
 
